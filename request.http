@@ -1,2 +1,28 @@
 ###
+GET http://localhost:3000/api/cars
+
+###
 GET http://localhost:3000/api/cars/1
+
+###
+POST http://localhost:3000/api/cars/
+Content-Type: application/json
+
+{
+"manufacture": "honda",
+"model": "civic",
+"color": "grey", 
+"year": 2021, 
+"MSRP": 27000
+}
+
+###
+PATCH http://localhost:3000/api/cars/1
+Content-Type: application/json
+
+{
+  "MSRP": 25050
+}
+
+###
+DELETE http://localhost:3000/api/cars/4
